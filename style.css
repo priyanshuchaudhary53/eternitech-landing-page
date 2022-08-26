@@ -77,7 +77,7 @@
 }
 
 .eternitech-lp--section-2 .eternitech-lp--inner-div {
-  background-image: url(/assets/img/section-2-bg.png);
+  background-image: url(assets/img/section-2-bg.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
@@ -128,7 +128,7 @@
 
 .eternitech-lp--section-3 .eternitech-lp--inner-div {
     min-height: 2050px;
-    background-image: url(/assets/img/eternitech-section-3-bg.png);
+    background-image: url(assets/img/eternitech-section-3-bg.png);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -147,7 +147,7 @@
 }
 
 .eternitech-lp--section-4 .eternitech-lp--inner-div {
-  background-image: url(/assets/img/section-4-bg.png);
+  background-image: url(assets/img/section-4-bg.png);
   background-size: cover;
   background-position: center center;
 }
