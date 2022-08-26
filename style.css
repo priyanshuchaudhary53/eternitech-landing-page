@@ -1,0 +1,235 @@
+@media (min-width: 1200px) {
+  .eternitech-lp--container {
+    max-width: 1210px;
+  }
+}
+
+.eternitech-lp--sub-heading {
+  padding-top: 115px;
+}
+
+.eternitech-lp--sub-heading h3 {
+  text-align: center;
+  color: #ffffff;
+  font-size: 60px;
+  line-height: 78px;
+  font-weight: 300;
+
+  margin-bottom: 0;
+}
+
+.eternitech-lp--sub-heading h3 span {
+  font-weight: 700;
+}
+
+/* Section 1 */
+
+.eternitech-lp--section-1 {
+  background: linear-gradient(
+    0deg,
+    #000228 -12.01%,
+    #122154 -10.92%,
+    #264484 -8.73%,
+    #365fab -6.54%,
+    #4172c6 -5.45%,
+    #487ed7 -4.36%,
+    #4b83dd -3.27%,
+    #4b7fd9 8.76%,
+    #4b74cd 19.69%,
+    #4b61b9 30.61%,
+    #4b479d 42.64%,
+    #4b368a 49.19%,
+    #0c153e 90.72%
+  );
+  padding: 0;
+}
+
+.eternitech-lp--section-1 > .eternitech-lp--inner-div {
+  background-image: url("/assets/img/eternitech-hero-bg.png");
+  background-size: cover;
+  background-position: center center;
+  min-height: 1360px;
+}
+
+.eternitech-lp--nav {
+  margin-bottom: -62px;
+}
+
+.eternitech-lp--main-heading {
+  padding-top: 400px;
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+}
+
+.eternitech-lp--main-heading h2 {
+  text-align: center;
+  font-size: 65px;
+  font-weight: 600;
+  line-height: 84.5px;
+  color: #ffffff;
+}
+
+/* Section 2 */
+
+.eternitech-lp--section-2 {
+  background-color: #030a1c;
+  padding: 0;
+}
+
+.eternitech-lp--section-2 .eternitech-lp--inner-div {
+  background-image: url(/assets/img/section-2-bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  min-height: 869px;
+}
+
+.eternitech-lp--paragraph {
+  margin-top: 32px;
+}
+
+.eternitech-lp--paragraph p,
+.eternitech-lp--stats-container p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  line-height: 36px;
+  font-weight: 500;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 0;
+}
+
+.eternitech-lp--stats-container {
+  margin: 0;
+  padding: 0;
+  margin-top: 105px;
+}
+
+.eternitech-lp--stats-container .row div {
+  text-align: center;
+}
+
+.eternitech-lp--stats-container h4 {
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 34px;
+  line-height: 40px;
+  font-weight: 600;
+  margin-top: 30px;
+  margin-bottom: 22px;
+}
+
+/* Section 3 */
+
+.eternitech-lp--section-3 {
+    padding: 0;
+    background: linear-gradient(0deg, #073A88 -1.55%, #161936 35.45%, #030A1C 98.45%);;
+}
+
+.eternitech-lp--section-3 .eternitech-lp--inner-div {
+    min-height: 2050px;
+    background-image: url(/assets/img/eternitech-section-3-bg.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.eternitech-lp--section-3 .eternitech-lp--paragraph {
+    max-width: 845px;
+    margin: 32px auto 100px;
+}
+
+/* Section 4 */
+
+.eternitech-lp--section-4 {
+  padding: 0;
+  background-color: #030A1C;
+}
+
+.eternitech-lp--section-4 .eternitech-lp--inner-div {
+  background-image: url(/assets/img/section-4-bg.png);
+  background-size: cover;
+  background-position: center center;
+}
+
+.eternitech-lp--section-4 .eternitech-lp--section-4-heading{
+  font-family: 'Permanent Marker', cursive;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.eternitech-lp--section-4 .eternitech-lp--container {
+  text-align: center;
+  padding-top: 100px;
+}
+
+.eternitech-lp--section-4 p {
+  font-family: 'Permanent Marker', cursive;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 96px;
+  margin: 32px auto 0;
+  max-width: 932px;
+}
+
+.eternitech-lp--section-4 .eternitech-lp--sub-heading {
+  padding-top: 125px;
+}
+
+/* Section 5 */
+
+
+
+/* Section 6 */
+
+.eternitech-lp--section-6 {
+  padding: 0;
+  background-color: #03142A;
+}
+
+.eternitech-lp--section-6 .eternitech-lp--container{
+  text-align: center;
+  padding: 130px 0 100px;
+}
+
+.eternitech-lp--section-6 h3 {
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-weight: 600;
+  line-height: 78px;
+  font-size: 60px;
+}
+
+.eternitech-lp--section-6 h3 span {
+  font-weight: 700;
+}
+
+.eternitech-lp--cta-button{
+  background-color: #27A8E0;
+  padding: 26px 52px;
+  border-radius: 100px;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 26px;
+  margin-top: 50px;
+}
+
+.eternitech-lp--cta-button:hover{
+  color: #e1e1e1;
+}
+
+/* Section 7 */
+
+.eternitech-lp--section-7 {
+  padding: 0;
+  background-color: #030A1C;
+}
+
+.eternitech-lp--section-7 .eternitech-lp--sub-heading{
+  padding-top: 160px;
+}
