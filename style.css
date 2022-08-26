@@ -45,7 +45,7 @@
 }
 
 .eternitech-lp--section-1 > .eternitech-lp--inner-div {
-  background-image: url("/assets/img/eternitech-hero-bg.png");
+  background-image: url("assets/img/eternitech-hero-bg.png");
   background-size: cover;
   background-position: center center;
   min-height: 1360px;
