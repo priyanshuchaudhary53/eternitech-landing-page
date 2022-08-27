@@ -477,6 +477,10 @@
   margin: 0 20px;
 }
 
+.eternitech-lp--section-8 .eternitech-lp--profolio-buttons a:hover {
+  color: #e1e1e1;
+}
+
 .eternitech-lp--section-8 .eternitech-lp--profolio-buttons a span {
   font-size: 24px;
   font-weight: 600;
@@ -522,6 +526,10 @@
   border-radius: 100px;
   text-transform: uppercase;
   margin-top: 50px;
+}
+
+.eternitech-lp--end-cta-btn:hover {
+  color: #e1e1e1;
 }
 
 .eternitech-lp--end-cta-btn span {
