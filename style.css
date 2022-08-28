@@ -3,6 +3,7 @@
     max-width: 1210px;
   }
 
+  .eternitech-lp--section-5 .eternitech-lp--container,
   .eternitech-lp--section-7 .eternitech-lp--container,
   .eternitech-lp--footer .eternitech-lp--container {
     max-width: 1500px;
@@ -234,6 +235,92 @@
 }
 
 /* Section 5 */
+
+.eternitech-lp--section-5 {
+  font-family: "Montserrat", sans-serif;
+  background-color: #030a1c;
+  padding: 0;
+}
+
+.eternitech-lp--hw-row1 {
+  padding-top: 60px;
+  background-image: url(assets/img/section-5-row-1-line.png);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+
+.eternitech-lp--section-5 .eternitech-lp--hw-row1-col1,
+.eternitech-lp--section-5 .eternitech-lp--hw-row2-col2 {
+  padding-left: 110px;
+}
+.eternitech-lp--section-5 .eternitech-lp--hw-row1-col1 h5,
+.eternitech-lp--section-5 .eternitech-lp--hw-row2-col3 h5 {
+  color: #66d7ff;
+  font-weight: 700;
+  line-height: 78px;
+  font-size: 60px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+.eternitech-lp--section-5 .eternitech-lp--hw-row1-col1 p,
+.eternitech-lp--section-5 .eternitech-lp--hw-row2-col3 p
+ {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  max-width: 300px;
+}
+
+.eternitech-lp--section-5 .eternitech-lp--hw-row1-col2 {
+  text-align: center;
+}
+
+.eternitech-lp--hw-row1-col2 .eternitech-lp--hw-cloud {
+  margin-bottom: 65px;
+}
+
+.eternitech-lp--hw-row1-col2 .eternitech-lp--hw-rocket {
+  margin-bottom: 65px;
+}
+
+.eternitech-lp--hw-row2 {
+  background-image: url(assets/img/section-5-row-2-line.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.eternitech-lp--hw-row2-col1 .eternitech-lp--hw-ninja2 {
+  margin-top: 50px;
+}
+
+.eternitech-lp--section-5 .eternitech-lp--hw-row2-col2 h5 {
+  color: #66d7ff;
+  font-weight: 700;
+  line-height: 78px;
+  font-size: 60px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.eternitech-lp--section-5 .eternitech-lp--hw-row2-col2 p {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  max-width: 300px;
+}
+
+.eternitech-lp--section-5 .eternitech-lp--hw-row2-col4 {
+  text-align: center;
+}
+
+.eternitech-lp--hw-row2-col4 .eternitech-lp--hw-ninja3 {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
 /* Section 6 */
 
