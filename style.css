@@ -1,8 +1,10 @@
 body {
   background-color: #030a1c;
+  overflow-x: hidden;
+  position: relative;
 }
 
-body, html {
+html {
   overflow-x: hidden;
 }
 
