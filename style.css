@@ -225,6 +225,24 @@ html {
   margin: 25px 0;
 }
 
+.eternitech-lp--section-3 .section-3--img-div {
+  text-align: center;
+}
+
+.eternitech-lp--section-3 .section-3--img-div .section-3--img-ninja2 {
+  position: absolute;
+  left: 50%;
+  margin-top: 130px;
+  transform: translateX(-50%);
+}
+
+.eternitech-lp--section-3 .section-3--img-div .section-3--img-ninja1 {
+  margin-top: 195px;
+  margin-bottom: 50px;
+  position: relative;
+  z-index: 9999;
+}
+
 @media (min-width: 576px) {
   .eternitech-lp--section-3 .card {
     max-width: 320px;
@@ -439,6 +457,13 @@ html {
   right: 0;
 }
 
+.eternitech-lp--float-up {
+  animation-name: eternitech-float-up;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
 .eternitech-lp--hw-floating {
   animation-name: eternitech-floating;
   animation-duration: 3s;
@@ -478,6 +503,18 @@ html {
   }
   50% {
     transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+
+@keyframes eternitech-float-up {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, -25px);
   }
   100% {
     transform: translate(0, -0px);
@@ -1012,6 +1049,15 @@ html {
   [data-aos="eternitech-lp--hw-leaf3"].aos-animate {
     transform: translate(400%, 1100%);
     opacity: 0;
+  }
+
+  .eternitech-lp--section-3 .section-3--img-div .section-3--img-ninja1 {
+    width: 65%;
+    margin-top: 50px;
+  }
+
+  .eternitech-lp--section-3 .section-3--img-div .section-3--img-ninja2 {
+    display: none;
   }
 }
 
