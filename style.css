@@ -1011,7 +1011,7 @@ html {
   
   [data-aos="eternitech-lp--hw-leaf3"].aos-animate {
     transform: translate(400%, 1100%);
-    opacity: 1;
+    opacity: 0;
   }
 }
 
