@@ -953,6 +953,11 @@ html {
 }
 
 @media (max-width: 576px) {
+
+  .eternitech-lp--main-heading {
+    padding-top: 350px !important;
+  }
+
   .eternitech-lp--hw-row1,
   .eternitech-lp--hw-row2,
   .eternitech-lp--hw-row3,
