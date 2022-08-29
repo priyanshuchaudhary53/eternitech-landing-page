@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 @media (min-width: 1200px) {
   .eternitech-lp--container {
     max-width: 1210px;
@@ -50,7 +54,13 @@
   padding: 0;
 }
 
-.eternitech-lp--section-1 > .eternitech-lp--inner-div {
+.eternitech-lp--section-1 img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.eternitech-lp--section-1 .eternitech-lp--inner-div {
   background-image: url("assets/img/eternitech-hero-bg.png");
   background-size: cover;
   background-position: center center;
@@ -73,6 +83,44 @@
   font-weight: 600;
   line-height: 84.5px;
   color: #ffffff;
+}
+
+.eternitech-lp--hero-floating {
+  animation-name: eternitech-hero-floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.eternitech-lp--hero-floating2 {
+  animation-name: eternitech-hero-floating2;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes eternitech-hero-floating {
+  0% {
+    transform: translate(-50%, 0px);
+  }
+  50% {
+    transform: translate(-50%, 15px);
+  }
+  100% {
+    transform: translate(-50%, -0px);
+  }
+}
+
+@keyframes eternitech-hero-floating2 {
+  0% {
+    transform: translate(-50%, 0px);
+  }
+  50% {
+    transform: translate(-50%, -15px);
+  }
+  100% {
+    transform: translate(-50%, -0px);
+  }
 }
 
 /* Section 2 */
@@ -242,6 +290,10 @@
   padding: 0;
 }
 
+.eternitech-lp--section-5 img {
+  max-width: 100%;
+}
+
 .eternitech-lp--hw-row1 {
   padding-top: 60px;
   background-image: url(assets/img/section-5-row-1-line.png);
@@ -250,11 +302,15 @@
 }
 
 .eternitech-lp--section-5 .eternitech-lp--hw-row1-col1,
-.eternitech-lp--section-5 .eternitech-lp--hw-row2-col2 {
+.eternitech-lp--section-5 .eternitech-lp--hw-row2-col3,
+.eternitech-lp--section-5 .eternitech-lp--hw-row3-col2,
+.eternitech-lp--section-5 .eternitech-lp--hw-row4-col1 {
   padding-left: 110px;
 }
 .eternitech-lp--section-5 .eternitech-lp--hw-row1-col1 h5,
-.eternitech-lp--section-5 .eternitech-lp--hw-row2-col3 h5 {
+.eternitech-lp--section-5 .eternitech-lp--hw-row2-col3 h5,
+.eternitech-lp--section-5 .eternitech-lp--hw-row3-col2 h5,
+.eternitech-lp--section-5 .eternitech-lp--hw-row4-col1 h5 {
   color: #66d7ff;
   font-weight: 700;
   line-height: 78px;
@@ -263,8 +319,9 @@
   text-transform: uppercase;
 }
 .eternitech-lp--section-5 .eternitech-lp--hw-row1-col1 p,
-.eternitech-lp--section-5 .eternitech-lp--hw-row2-col3 p
- {
+.eternitech-lp--section-5 .eternitech-lp--hw-row2-col3 p,
+.eternitech-lp--section-5 .eternitech-lp--hw-row3-col2 p,
+.eternitech-lp--section-5 .eternitech-lp--hw-row4-col1 p {
   color: #ffffff;
   font-weight: 400;
   font-size: 20px;
@@ -320,6 +377,116 @@
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 1000;
+}
+
+.eternitech-lp--hw-row2-col4 .eternitech-lp--hw-leaf1 {
+  position: absolute;
+  left: 35%;
+  bottom: 70%;
+}
+
+.eternitech-lp--hw-row4-col2 .eternitech-lp--hw-leaf3 {
+  position: absolute;
+  left: 0;
+  top: 15%;
+}
+
+[data-aos="eternitech-lp--hw-leaf1"] {
+  transform: translate(0,0);
+  opacity: 1;
+  transition-property: transform, opacity;
+}
+
+[data-aos="eternitech-lp--hw-leaf1"].aos-animate {
+  transform: translate(200%,700%);
+  opacity: 0;
+}
+
+[data-aos="eternitech-lp--hw-leaf3"] {
+  transform: translate(0,0);
+  opacity: 1;
+  transition-property: transform, opacity;
+}
+
+[data-aos="eternitech-lp--hw-leaf3"].aos-animate {
+  transform: translate(200%,1500%);
+  opacity: 0;
+}
+
+.eternitech-lp--hw-row3-col1 .eternitech-lp--hw-ninja4 {
+  margin-top: 210px;
+}
+
+.eternitech-lp--hw-row3 {
+  background-image: url(assets/img/section-5-row-3-line.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.eternitech-lp--hw-row4 {
+  background-image: url(assets/img/section-5-row-4-line.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.eternitech-lp--section-5 .eternitech-lp--hw-row4-col2 {
+  text-align: center;
+}
+
+.eternitech-lp--hw-row4-col2 .eternitech-lp--hw-ninja5 {
+  margin-top: 250px;
+}
+
+.eternitech-lp--hw-row4-col2 .eternitech-lp--hw-bee {
+  position: absolute;
+  bottom: 65px;
+  right: 0;
+}
+
+.eternitech-lp--hw-floating {
+  animation-name: eternitech-floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.eternitech-lp--delay {
+  animation-delay: 1.5s;
+}
+
+.eternitech-lp--hw-swaying {
+  animation-name: eternitech-swaying;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes eternitech-swaying {
+  0% {
+    transform: rotate(-0.5deg);
+    transform-origin: right bottom;
+  }
+  50%{
+    transform: rotate(0.5deg);
+    transform-origin: right bottom;
+  }
+  100%{
+    transform: rotate(-0.5deg);
+    transform-origin: right bottom;
+  }
+}
+
+@keyframes eternitech-floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
 }
 
 /* Section 6 */
