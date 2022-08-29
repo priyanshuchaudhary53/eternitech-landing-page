@@ -1,4 +1,8 @@
 body {
+  background-color: #030a1c;
+}
+
+body, html {
   overflow-x: hidden;
 }
 
