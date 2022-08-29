@@ -911,7 +911,7 @@ html {
 
 @media (max-width: 1200px) {
   .eternitech-lp--section-1 .eternitech-lp--inner-div {
-    min-height: 100vh;
+    min-height: 1000px;
   }
 
   .eternitech-lp--main-heading {
@@ -964,6 +964,10 @@ html {
     line-height: 60px;
   }
 
+  .eternitech-lp--section-8 .eternitech-lp--profolio .col-sm-4 {
+    padding: 25px 50px;
+  }
+
   .eternitech-lp--section-6 h3 {
     font-size: 40px;
     line-height: 60px;
@@ -1008,13 +1012,22 @@ html {
     padding: 16px 32px;
   }
 
-  .eternitech-lp--profolio-buttons .eternitech-lp--profolio-btn-1 {
-    margin-bottom: 20px;
+  .eternitech-lp--section-8 .eternitech-lp--profolio-buttons a {
+    margin: 0 0 20px 0;
+  }
+
+  .eternitech-lp--section-8 .eternitech-lp--profolio-buttons {
+    margin-top: 50px;
   }
 
   .eternitech-lp--end-cta p {
     font-size: 40px;
     line-height: 60px;
+    margin-top: 100px;
+  }
+
+  .eternitech-lp--end-cta {
+    padding-bottom: 100px;
   }
 }
 
