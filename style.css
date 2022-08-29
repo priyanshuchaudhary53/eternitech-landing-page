@@ -424,7 +424,13 @@ html {
 }
 
 .eternitech-lp--hw-row4-col2 .eternitech-lp--hw-ninja5 {
+  position: relative;
   margin-top: 250px;
+  z-index: 999999;
+}
+
+.eternitech-lp--hw-row4-col2 .eternitech-lp--hw-leaf3 {
+  z-index: 0;
 }
 
 .eternitech-lp--hw-row4-col2 .eternitech-lp--hw-bee {
@@ -650,25 +656,25 @@ html {
   max-width: 710px;
 }
 
-.eternitech-lp--section-8 .eternitech-lp--profolio .col-sm-4 {
+.eternitech-lp--section-8 .eternitech-lp--portfolio .col-md-4 {
   padding: 20px 30px;
 }
 
-.eternitech-lp--section-8 .eternitech-lp--profolio .card {
+.eternitech-lp--section-8 .eternitech-lp--portfolio .card {
   background-color: #ffffff;
   border-radius: 50px;
 }
 
-.eternitech-lp--section-8 .eternitech-lp--profolio .card .card-body {
+.eternitech-lp--section-8 .eternitech-lp--portfolio .card .card-body {
   padding: 35px;
 }
 
-.eternitech-lp--profolio .card .card-img-wrap {
+.eternitech-lp--portfolio .card .card-img-wrap {
   min-height: 150px;
   position: relative;
 }
 
-.eternitech-lp--profolio .card .card-img-wrap img {
+.eternitech-lp--portfolio .card .card-img-wrap img {
   max-width: 250px;
   position: absolute;
   top: 50%;
@@ -676,7 +682,7 @@ html {
   transform: translate(-50%, -50%);
 }
 
-.eternitech-lp--profolio .eternitech-lp--profolio-title {
+.eternitech-lp--portfolio .eternitech-lp--portfolio-title {
   margin-top: 50px;
   margin-bottom: 15px;
   font-family: "Montserrat", sans-serif;
@@ -686,7 +692,7 @@ html {
   color: #000000;
 }
 
-.eternitech-lp--profolio .eternitech-lp--profolio-skill p {
+.eternitech-lp--portfolio .eternitech-lp--portfolio-skill p {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 20px;
@@ -695,7 +701,7 @@ html {
   display: inline-block;
   margin-bottom: 0;
 }
-.eternitech-lp--profolio .eternitech-lp--profolio-skill span {
+.eternitech-lp--portfolio .eternitech-lp--portfolio-skill span {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -707,12 +713,12 @@ html {
   margin-left: 10px;
 }
 
-.eternitech-lp--section-8 .eternitech-lp--profolio-buttons {
+.eternitech-lp--section-8 .eternitech-lp--portfolio-buttons {
   margin-top: 80px;
   text-align: center;
 }
 
-.eternitech-lp--section-8 .eternitech-lp--profolio-buttons a {
+.eternitech-lp--section-8 .eternitech-lp--portfolio-buttons a {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 20px;
@@ -721,23 +727,23 @@ html {
   margin: 0 20px;
 }
 
-.eternitech-lp--section-8 .eternitech-lp--profolio-buttons a:hover {
+.eternitech-lp--section-8 .eternitech-lp--portfolio-buttons a:hover {
   color: #e1e1e1;
 }
 
-.eternitech-lp--section-8 .eternitech-lp--profolio-buttons a span {
+.eternitech-lp--section-8 .eternitech-lp--portfolio-buttons a span {
   font-size: 24px;
   font-weight: 600;
   margin-left: 15px;
 }
 
-.eternitech-lp--profolio-buttons .eternitech-lp--profolio-btn-1 {
+.eternitech-lp--portfolio-buttons .eternitech-lp--portfolio-btn-1 {
   padding: 26px 52px;
   background-color: #27a8e0;
   border-radius: 100px;
 }
 
-.eternitech-lp--profolio-buttons .eternitech-lp--profolio-btn-2 {
+.eternitech-lp--portfolio-buttons .eternitech-lp--portfolio-btn-2 {
   padding: 26px 52px;
   border: 3px solid #1e75bb;
   border-radius: 100px;
@@ -909,6 +915,106 @@ html {
   }
 }
 
+@media (max-width: 576px) {
+  .eternitech-lp--hw-row1,
+  .eternitech-lp--hw-row2,
+  .eternitech-lp--hw-row3,
+  .eternitech-lp--hw-row4 {
+    background-image: none;
+  }
+
+  .eternitech-lp--section-5 h5 {
+    font-size: 50px !important;
+    line-height: 68px !important;
+    margin-bottom: 0 !important;
+    text-align: center;
+  }
+
+  .eternitech-lp--section-5 .eternitech-lp--hw-row2-col3 h5 {
+    margin-top: 50px;
+  }
+
+  .eternitech-lp--section-5 .eternitech-lp--hw-row1-col1,
+  .eternitech-lp--section-5 .eternitech-lp--hw-row2-col3,
+  .eternitech-lp--section-5 .eternitech-lp--hw-row3-col2,
+  .eternitech-lp--section-5 .eternitech-lp--hw-row4-col1 {
+    padding-left: 15px;
+  }
+
+  .eternitech-lp--hw-row2-col1 .eternitech-lp--hw-ninja2,
+  .eternitech-lp--hw-row1-col2 .eternitech-lp--hw-cloud {
+    margin-top: 25px;
+  }
+
+  .eternitech-lp--section-5 p {
+    margin: 0 auto 1rem;
+    text-align: center;
+  }
+
+  .eternitech-lp--hw-row1-col2 .eternitech-lp--hw-cloud {
+    margin-bottom: 25px;
+  }
+
+  .eternitech-lp--section-5 .eternitech-lp--hw-row2-col1,
+  .eternitech-lp--section-5 .eternitech-lp--hw-row3-col1 {
+    text-align: center;
+  }
+
+  .eternitech-lp--section-5 .eternitech-lp--hw-row1-col2 img,
+  .eternitech-lp--section-5 .eternitech-lp--hw-row2-col1 img {
+    width: 65%;
+  }
+
+  .eternitech-lp--hw-swaying,
+  .eternitech-lp--hw-row2-col4 .eternitech-lp--hw-ninja3 {
+    width: 80%;
+  }
+
+  .eternitech-lp--section-5 .eternitech-lp--hw-row3-col2 h5,
+  .eternitech-lp--section-5 .eternitech-lp--hw-row4-col1 h5 {
+    margin-top: 50px;
+  }
+
+  .eternitech-lp--hw-row3-col1 .eternitech-lp--hw-ninja4 {
+    margin-top: 20px;
+    width: 80%;
+  }
+
+  .eternitech-lp--hw-row4-col2 .eternitech-lp--hw-ninja5 {
+    margin-top: 20px;
+    width: 65%;
+  }
+
+  .eternitech-lp--hw-row4-col2 .eternitech-lp--hw-bee {
+    width: 30px;
+    right: 10%;
+  }
+
+  .eternitech-lp--hw-row2-col4 .eternitech-lp--hw-leaf1 {
+    width: 30px;
+  }
+
+  [data-aos="eternitech-lp--hw-leaf1"].aos-animate {
+    transform: translate(200%, 500%);
+    opacity: 0;
+  }
+
+  .eternitech-lp--hw-row4-col2 .eternitech-lp--hw-leaf3 {
+    width: 43px;
+  }
+
+  [data-aos="eternitech-lp--hw-leaf3"] {
+    transform: translate(200%, 0);
+    opacity: 1;
+    transition-property: transform, opacity;
+  }
+  
+  [data-aos="eternitech-lp--hw-leaf3"].aos-animate {
+    transform: translate(400%, 1100%);
+    opacity: 1;
+  }
+}
+
 @media (max-width: 1200px) {
   .eternitech-lp--section-1 .eternitech-lp--inner-div {
     min-height: 1000px;
@@ -964,7 +1070,7 @@ html {
     line-height: 60px;
   }
 
-  .eternitech-lp--section-8 .eternitech-lp--profolio .col-sm-4 {
+  .eternitech-lp--section-8 .eternitech-lp--portfolio .col-sm-4 {
     padding: 25px 50px;
   }
 
@@ -992,31 +1098,31 @@ html {
   }
 
   .eternitech-lp--cta-button span,
-  .eternitech-lp--section-8 .eternitech-lp--profolio-buttons a span,
+  .eternitech-lp--section-8 .eternitech-lp--portfolio-buttons a span,
   .eternitech-lp--end-cta-btn span {
     font-size: 18px;
     margin-left: 5px;
   }
 
-  .eternitech-lp--section-8 .eternitech-lp--profolio-buttons a,
+  .eternitech-lp--section-8 .eternitech-lp--portfolio-buttons a,
   .eternitech-lp--cta-button,
   .eternitech-lp--end-cta-btn {
     font-size: 16px;
     line-height: 20px;
   }
 
-  .eternitech-lp--profolio-buttons .eternitech-lp--profolio-btn-1,
-  .eternitech-lp--profolio-buttons .eternitech-lp--profolio-btn-2,
+  .eternitech-lp--portfolio-buttons .eternitech-lp--portfolio-btn-1,
+  .eternitech-lp--portfolio-buttons .eternitech-lp--portfolio-btn-2,
   .eternitech-lp--cta-button,
   .eternitech-lp--end-cta-btn {
     padding: 16px 32px;
   }
 
-  .eternitech-lp--section-8 .eternitech-lp--profolio-buttons a {
+  .eternitech-lp--section-8 .eternitech-lp--portfolio-buttons a {
     margin: 0 0 20px 0;
   }
 
-  .eternitech-lp--section-8 .eternitech-lp--profolio-buttons {
+  .eternitech-lp--section-8 .eternitech-lp--portfolio-buttons {
     margin-top: 50px;
   }
 
