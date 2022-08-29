@@ -8,18 +8,6 @@ html {
   overflow-x: hidden;
 }
 
-@media (min-width: 1200px) {
-  .eternitech-lp--container {
-    max-width: 1210px;
-  }
-
-  .eternitech-lp--section-5 .eternitech-lp--container,
-  .eternitech-lp--section-7 .eternitech-lp--container,
-  .eternitech-lp--footer .eternitech-lp--container {
-    max-width: 1500px;
-  }
-}
-
 .eternitech-lp--sub-heading {
   padding-top: 115px;
 }
@@ -30,7 +18,6 @@ html {
   font-size: 60px;
   line-height: 78px;
   font-weight: 300;
-
   margin-bottom: 0;
 }
 
@@ -70,7 +57,6 @@ html {
   background-image: url("assets/img/eternitech-hero-bg.png");
   background-size: cover;
   background-position: center center;
-  min-height: 1360px;
 }
 
 .eternitech-lp--nav {
@@ -78,16 +64,13 @@ html {
 }
 
 .eternitech-lp--main-heading {
-  padding-top: 400px;
   font-family: "Montserrat", sans-serif;
   width: 100%;
 }
 
 .eternitech-lp--main-heading h2 {
   text-align: center;
-  font-size: 65px;
   font-weight: 600;
-  line-height: 84.5px;
   color: #ffffff;
 }
 
@@ -139,13 +122,13 @@ html {
 .eternitech-lp--section-2 .eternitech-lp--inner-div {
   background-image: url(assets/img/section-2-bg.png);
   background-repeat: no-repeat;
-  background-size: contain;
   background-position: center center;
   min-height: 869px;
 }
 
 .eternitech-lp--paragraph {
-  margin-top: 32px;
+  margin: 32px auto 0;
+  max-width: 950px;
 }
 
 .eternitech-lp--paragraph p,
@@ -399,24 +382,24 @@ html {
 }
 
 [data-aos="eternitech-lp--hw-leaf1"] {
-  transform: translate(0,0);
+  transform: translate(0, 0);
   opacity: 1;
   transition-property: transform, opacity;
 }
 
 [data-aos="eternitech-lp--hw-leaf1"].aos-animate {
-  transform: translate(200%,700%);
+  transform: translate(200%, 700%);
   opacity: 0;
 }
 
 [data-aos="eternitech-lp--hw-leaf3"] {
-  transform: translate(0,0);
+  transform: translate(0, 0);
   opacity: 1;
   transition-property: transform, opacity;
 }
 
 [data-aos="eternitech-lp--hw-leaf3"].aos-animate {
-  transform: translate(200%,1500%);
+  transform: translate(200%, 1500%);
   opacity: 0;
 }
 
@@ -473,11 +456,11 @@ html {
     transform: rotate(-0.5deg);
     transform-origin: right bottom;
   }
-  50%{
+  50% {
     transform: rotate(0.5deg);
     transform-origin: right bottom;
   }
-  100%{
+  100% {
     transform: rotate(-0.5deg);
     transform-origin: right bottom;
   }
@@ -912,4 +895,166 @@ html {
   bottom: 35px;
   left: 50%;
   transform: translateX(-50%);
+}
+
+@media (min-width: 1200px) {
+  .eternitech-lp--container {
+    max-width: 1210px;
+  }
+
+  .eternitech-lp--section-5 .eternitech-lp--container,
+  .eternitech-lp--section-7 .eternitech-lp--container,
+  .eternitech-lp--footer .eternitech-lp--container {
+    max-width: 1500px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .eternitech-lp--section-1 .eternitech-lp--inner-div {
+    min-height: 100vh;
+  }
+
+  .eternitech-lp--main-heading {
+    padding-top: 400px;
+  }
+
+  .eternitech-lp--section-2 .eternitech-lp--inner-div {
+    background-size: cover;
+  }
+
+  .eternitech-lp--sub-heading h3 {
+    font-size: 50px;
+    line-height: 68px;
+  }
+
+  .eternitech-lp--stats-container {
+    margin-top: 50px;
+  }
+
+  .eternitech-lp--paragraph p,
+  .eternitech-lp--stats-container p {
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .eternitech-lp--stats-container h4 {
+    margin-top: 15px;
+    margin-bottom: 11px;
+  }
+
+  .eternitech-lp--stats-container .col-sm-3 {
+    margin-bottom: 20px;
+  }
+
+  .eternitech-lp--section-3 .row .col-sm-4 {
+    margin: 25px;
+  }
+
+  .eternitech-lp--section-3 .card-body {
+    padding: 25px;
+  }
+
+  .eternitech-lp--section-4 .eternitech-lp--section-4-heading {
+    font-size: 40px;
+    line-height: 60px;
+  }
+
+  .eternitech-lp--section-4 p {
+    font-size: 40px;
+    line-height: 60px;
+  }
+
+  .eternitech-lp--section-6 h3 {
+    font-size: 40px;
+    line-height: 60px;
+  }
+
+  .eternitech-lp--testimonial-item p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .eternitech-lp--testimonial-item h6.eternitech-lp--testimonial-title {
+    margin-bottom: 0;
+  }
+
+  .eternitech-lp--testimonial-item p {
+    margin-top: 0;
+  }
+
+  .eternitech-lp--section-8 p.eternitech-lp--heading {
+    font-size: 40px;
+    line-height: 60px;
+  }
+
+  .eternitech-lp--cta-button span,
+  .eternitech-lp--section-8 .eternitech-lp--profolio-buttons a span,
+  .eternitech-lp--end-cta-btn span {
+    font-size: 18px;
+    margin-left: 5px;
+  }
+
+  .eternitech-lp--section-8 .eternitech-lp--profolio-buttons a,
+  .eternitech-lp--cta-button,
+  .eternitech-lp--end-cta-btn {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .eternitech-lp--profolio-buttons .eternitech-lp--profolio-btn-1,
+  .eternitech-lp--profolio-buttons .eternitech-lp--profolio-btn-2,
+  .eternitech-lp--cta-button,
+  .eternitech-lp--end-cta-btn {
+    padding: 16px 32px;
+  }
+
+  .eternitech-lp--profolio-buttons .eternitech-lp--profolio-btn-1 {
+    margin-bottom: 20px;
+  }
+
+  .eternitech-lp--end-cta p {
+    font-size: 40px;
+    line-height: 60px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1600px) {
+  .eternitech-lp--section-1 .eternitech-lp--inner-div {
+    min-height: 1068px;
+  }
+
+  .eternitech-lp--main-heading h2 {
+    font-size: 54px;
+    line-height: 70px;
+  }
+
+  .eternitech-lp--main-heading {
+    padding-top: 375px;
+  }
+
+  .eternitech-lp--section-5 .eternitech-lp--container {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .eternitech-lp--section-2 .eternitech-lp--inner-div {
+    background-size: contain;
+  }
+}
+
+@media (min-width: 1600px) {
+  .eternitech-lp--section-1 .eternitech-lp--inner-div {
+    min-height: 1360px;
+  }
+
+  .eternitech-lp--main-heading h2 {
+    font-size: 65px;
+    line-height: 84px;
+  }
+
+  .eternitech-lp--main-heading {
+    padding-top: 400px;
+  }
+  .eternitech-lp--section-2 .eternitech-lp--inner-div {
+    background-size: contain;
+  }
 }
