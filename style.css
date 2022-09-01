@@ -19,6 +19,7 @@ html {
   line-height: 78px;
   font-weight: 300;
   margin-bottom: 0;
+  font-family: "Montserrat", sans-serif;
 }
 
 .eternitech-lp--sub-heading h3 span {
@@ -162,6 +163,17 @@ html {
   margin-bottom: 22px;
 }
 
+.eternitech-lp--stats-container img {
+  transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+}
+
+.eternitech-lp--stats-container img:hover {
+  -webkit-filter: drop-shadow(7px 7px 5px #454545);
+  filter: drop-shadow(7px 7px 5px #454545);
+}
+
 /* Section 3 */
 
 .eternitech-lp--section-3 {
@@ -192,12 +204,16 @@ html {
   background-color: transparent;
   border: 2px solid #1e75bb;
   border-radius: 50px;
-  -webkit-transition: box-shadow linear 0.25s;
-  transition: box-shadow linear 0.25s;
+  -webkit-transition: all linear 0.25s;
+  transition: all linear 0.25s;
 }
 
 .eternitech-lp--section-3 .card:hover {
-  box-shadow: 0 0 15px #143b91;
+  /* box-shadow: 0 0 15px #143b91; */
+  background-color: rgba(39, 168, 224, 0.4);
+  border-color: rgba(39, 168, 224, 0);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
 }
 
 .eternitech-lp--section-3 .card-body {
@@ -393,10 +409,27 @@ html {
   bottom: 70%;
 }
 
+.eternitech-lp--hw-row3-col1 .eternitech-lp--hw-leaf2 {
+  position: absolute;
+  left: 0;
+  top: -20%;
+}
+
 .eternitech-lp--hw-row4-col2 .eternitech-lp--hw-leaf3 {
   position: absolute;
   left: 0;
   top: 15%;
+}
+
+[data-aos="eternitech-lp--hw-leaf2"] {
+  transform: translate(0, 0);
+  opacity: 1;
+  transition-property: transform, opacity;
+}
+
+[data-aos="eternitech-lp--hw-leaf2"].aos-animate {
+  transform: translate(300%, 2500%);
+  opacity: 0;
 }
 
 [data-aos="eternitech-lp--hw-leaf1"] {
@@ -423,6 +456,15 @@ html {
 
 .eternitech-lp--hw-row3-col1 .eternitech-lp--hw-ninja4 {
   margin-top: 210px;
+  position: relative;
+  z-index: 9999;
+}
+
+.eternitech-lp--hw-row3-col1 .eternitech-lp--hw-grass1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 999999;
 }
 
 .eternitech-lp--hw-row3 {
@@ -444,11 +486,20 @@ html {
 .eternitech-lp--hw-row4-col2 .eternitech-lp--hw-ninja5 {
   position: relative;
   margin-top: 250px;
-  z-index: 999999;
+  z-index: 9999;
 }
 
 .eternitech-lp--hw-row4-col2 .eternitech-lp--hw-leaf3 {
   z-index: 0;
+}
+
+.eternitech-lp--hw-row4-col2 .eternitech-lp--hw-grass2,
+.eternitech-lp--hw-row4-col2 .eternitech-lp--hw-grass3 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  z-index: 999999;
 }
 
 .eternitech-lp--hw-row4-col2 .eternitech-lp--hw-bee {
@@ -480,6 +531,26 @@ html {
   animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
+}
+
+.eternitech-lp--grass1-sway,
+.eternitech-lp--grass2-sway,
+.eternitech-lp--grass3-sway {
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.eternitech-lp--grass1-sway {
+  animation-name: eternitech-grass1-sway;
+}
+
+.eternitech-lp--grass2-sway {
+  animation-name: eternitech-grass2-sway;
+}
+
+.eternitech-lp--grass3-sway {
+  animation-name: eternitech-grass3-sway;
 }
 
 @keyframes eternitech-swaying {
@@ -521,6 +592,51 @@ html {
   }
 }
 
+@keyframes eternitech-grass1-sway {
+  0% {
+    transform: rotate(-1.5deg);
+    transform-origin: 20% bottom;
+  }
+  50% {
+    transform: rotate(1.5deg);
+    transform-origin: 20% bottom;
+  }
+  100% {
+    transform: rotate(-1.5deg);
+    transform-origin: 20% bottom;
+  }
+}
+
+@keyframes eternitech-grass2-sway {
+  0% {
+    transform: rotate(-0.75deg) translateX(-50%);
+    transform-origin: left bottom;
+  }
+  50% {
+    transform: rotate(0.75deg) translateX(-50%);
+    transform-origin: left bottom;
+  }
+  100% {
+    transform: rotate(-0.75deg) translateX(-50%);
+    transform-origin: left bottom;
+  }
+}
+
+@keyframes eternitech-grass3-sway {
+  0% {
+    transform: rotate(0.75deg) translateX(-50%);
+    transform-origin: left bottom;
+  }
+  50% {
+    transform: rotate(-0.75deg) translateX(-50%);
+    transform-origin: left bottom;
+  }
+  100% {
+    transform: rotate(0.75deg) translateX(-50%);
+    transform-origin: left bottom;
+  }
+}
+
 /* Section 6 */
 
 .eternitech-lp--section-6 {
@@ -555,6 +671,7 @@ html {
   font-size: 20px;
   line-height: 26px;
   margin-top: 50px;
+  transition: all 0.3s ease 0s;
 }
 
 .eternitech-lp--cta-button span {
@@ -565,6 +682,7 @@ html {
 
 .eternitech-lp--cta-button:hover {
   color: #e1e1e1;
+  box-shadow: 0px 5px 10px #113f52;
 }
 
 /* Section 7 */
@@ -778,6 +896,11 @@ html {
   padding: 26px 52px;
   background-color: #27a8e0;
   border-radius: 100px;
+  transition: all 0.3s ease 0s;
+}
+
+.eternitech-lp--portfolio-buttons .eternitech-lp--portfolio-btn-1:hover {
+  box-shadow: 0px 5px 10px #113f52;
 }
 
 .eternitech-lp--portfolio-buttons .eternitech-lp--portfolio-btn-2 {
@@ -813,10 +936,12 @@ html {
   border-radius: 100px;
   text-transform: uppercase;
   margin-top: 50px;
+  transition: all 0.3s ease 0s;
 }
 
 .eternitech-lp--end-cta-btn:hover {
   color: #e1e1e1;
+  box-shadow: 0px 5px 10px #113f52;
 }
 
 .eternitech-lp--end-cta-btn span {
@@ -953,7 +1078,6 @@ html {
 }
 
 @media (max-width: 576px) {
-
   .eternitech-lp--main-heading {
     padding-top: 350px !important;
   }
@@ -1022,6 +1146,16 @@ html {
     width: 80%;
   }
 
+  .eternitech-lp--hw-row3-col1 .eternitech-lp--hw-grass1 {
+    width: 80%;
+    left: 10%;
+  }
+
+  .eternitech-lp--hw-row4-col2 .eternitech-lp--hw-grass2,
+  .eternitech-lp--hw-row4-col2 .eternitech-lp--hw-grass3 {
+    width: 65%;
+  }
+
   .eternitech-lp--hw-row4-col2 .eternitech-lp--hw-ninja5 {
     margin-top: 20px;
     width: 65%;
@@ -1041,6 +1175,15 @@ html {
     opacity: 0;
   }
 
+  .eternitech-lp--hw-row3-col1 .eternitech-lp--hw-leaf2 {
+    width: 30px;
+  }
+
+  [data-aos="eternitech-lp--hw-leaf2"].aos-animate {
+    transform: translate(400%, 2500%);
+    opacity: 0;
+  }
+
   .eternitech-lp--hw-row4-col2 .eternitech-lp--hw-leaf3 {
     width: 43px;
   }
@@ -1050,7 +1193,7 @@ html {
     opacity: 1;
     transition-property: transform, opacity;
   }
-  
+
   [data-aos="eternitech-lp--hw-leaf3"].aos-animate {
     transform: translate(400%, 1100%);
     opacity: 0;
@@ -1116,6 +1259,20 @@ html {
     font-weight: 400;
   }
 
+  @keyframes eternitech-grass1-sway {
+    0% {
+      transform: rotate(-1.5deg);
+      transform-origin: 20% bottom;
+    }
+    50% {
+      transform: rotate(1.5deg);
+      transform-origin: 20% bottom;
+    }
+    100% {
+      transform: rotate(-1.5deg);
+      transform-origin: 20% bottom;
+    }
+  }
 }
 
 @media (max-width: 1200px) {
