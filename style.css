@@ -163,17 +163,6 @@ html {
   margin-bottom: 22px;
 }
 
-.eternitech-lp--stats-container img {
-  transition: all 0.3s ease 0s;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-}
-
-.eternitech-lp--stats-container img:hover {
-  -webkit-filter: drop-shadow(7px 7px 5px #454545);
-  filter: drop-shadow(7px 7px 5px #454545);
-}
-
 /* Section 3 */
 
 .eternitech-lp--section-3 {
