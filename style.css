@@ -1617,6 +1617,40 @@ html {
   }
 }
 
+@media (max-width: 576px)  {
+  .modal-content .modal-body {
+    padding: 0 25px;
+  }
+
+  .eternitech-lp--popup form label {
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
+
+  .eternitech-lp--popup .row-2 a.btn,
+  .eternitech-lp--popup .row-3 a.btn {
+    margin-top: 15px;
+  }
+
+  .eternitech-lp--popup form textarea {
+    height: 344px;
+  }
+
+  .popup-form-section-2 a.btn {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .eternitech-lp--popup form .popup-form-submit {
+    padding-top: 19px;
+    padding-bottom: 19px;
+  }
+
+  .modal-content .modal-body p {
+    margin-top: 50px;
+  }
+}
+
 @media (max-width: 768px) {
   .eternitech-lp--popup .row-4 {
     flex-direction: column;
