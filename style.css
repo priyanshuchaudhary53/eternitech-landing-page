@@ -1633,7 +1633,7 @@ html {
   }
 
   .eternitech-lp--popup form textarea {
-    height: 344px;
+    margin-top: 20px;
   }
 
   .popup-form-section-2 a.btn {
@@ -1651,8 +1651,24 @@ html {
   }
 }
 
+@media (min-width: 576px) and (max-width: 768px) {
+  .modal-content .modal-body {
+    padding: 0 50px;
+  }
+}
+
 @media (max-width: 768px) {
   .eternitech-lp--popup .row-4 {
     flex-direction: column;
+  }
+
+  .popup-form-section-2 a.btn {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .eternitech-lp--popup form .popup-form-submit {
+    padding-top: 19px;
+    padding-bottom: 19px;
   }
 }
