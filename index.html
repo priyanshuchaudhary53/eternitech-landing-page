@@ -43,145 +43,25 @@
     <title>Landing Page</title>
   </head>
   <body>
-    <!-- Popup Form -->
-    <div
-      id="eternitech-lp--popup"
-      class="eternitech-lp--popup modal fade"
-      tabindex="-1"
-    >
-      <div
-        class="eternitech-lp--popup-inner modal-dialog modal-dialog-centered"
-      >
-        <div class="eternitech-lp--popup-content modal-content">
-          <div class="modal-header">
-            <button
-              id="popup-close"
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <i class="bi bi-x-lg"></i>
-            </button>
-          </div>
-          <div class="modal-body">
-            <form id="popup-form" action="" method="get">
-              <section id="popup-form-section-1" class="popup-form-section-1">
-                <h3>Let's Get Things Done With Us</h3>
-                <h5>I Would Like To Get More Information</h5>
-                <div class="row-1 row">
-                  <div class="col-sm-12">
-                    <label for="fname">First Name</label>
-                    <input
-                      id="form-fname"
-                      type="text"
-                      name="fname"
-                      class="form-fname"
-                    />
-                  </div>
-                </div>
-                <div class="row-2 row row-cols-2">
-                  <div class="col-sm-6">
-                    <label for="email">Email address</label>
-                    <input
-                      id="form-email"
-                      type="email"
-                      name="email"
-                      class="form-email"
-                    />
-                  </div>
-                  <div class="col-sm-6">
-                    <label for="number">Phone number</label>
-                    <input
-                      id="form-phone"
-                      type="tel"
-                      name="number"
-                      class="form-phone"
-                    />
-                  </div>
-                  <div class="col-sm-6">
-                    <a
-                      href="#"
-                      id="book-meeting-btn"
-                      class="btn book-meeting-btn"
-                      role="button"
-                      >Book a meeting</a
-                    >
-                  </div>
-                  <div class="col-sm-6">
-                    <a
-                      href="#"
-                      id="chat-sales-btn"
-                      class="btn chat-sales-btn"
-                      role="button"
-                      >Chat with a sales Rep.</a
-                    >
-                  </div>
-                </div>
-                <div class="row-3 row">
-                  <div class="col-sm-12">
-                    <a
-                      href="#"
-                      id="get-back-btn"
-                      class="btn get-back-btn"
-                      role="button"
-                      >Get back to me</a
-                    >
-                  </div>
-                </div>
-              </section>
-              <section
-                id="popup-form-section-2"
-                class="popup-form-section-2 hidden"
-              >
-                <h3>Tell us something about your project</h3>
-                <textarea
-                  name="details"
-                  id="form-details"
-                  class="form-details"
-                ></textarea>
-                <div class="row-4">
-                  <a
-                    href="#"
-                    id="popup-form-back"
-                    class="btn back-btn"
-                    role="button"
-                    ><i class="bi bi-arrow-left-short"></i> Back</a
-                  >
-                  <!-- This button will post to the default url of the form -->
-                  <button
-                    type="submit"
-                    id="book-meeting-submit"
-                    class="popup-form-submit hidden"
-                  >
-                    Book a meeting
-                  </button>
-                  <!-- This button will post to the custom URL of the formaction attribute -->
-                  <button
-                    type="submit"
-                    id="chat-sales-submit"
-                    class="popup-form-submit hidden"
-                    formaction=""
-                  >
-                    Chat with a sales Rep.
-                  </button>
-                  <!-- This button will post to the custom URL of the formaction attribute -->
-                  <button
-                    type="submit"
-                    id="get-back-submit"
-                    class="popup-form-submit hidden"
-                    formaction=""
-                  >
-                    Get back to me
-                  </button>
-                </div>
-              </section>
-            </form>
-            <p>eternitech.com</p>
-          </div>
-        </div>
-      </div>
-    </div>
+    <!-- Iframe popup form -->
+    <iframe
+      id="popup-form-iframe"
+      class="popup-form"
+      src="popup/popup-form.html"
+      frameborder="0"
+      scrolling="no"
+      style="
+        display: none;
+        z-index: 999999999;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+      "
+    ></iframe>
 
     <!-- Navbar -->
     <nav class="eternitech-lp--nav navbar sticky-top">
@@ -571,10 +451,9 @@
           <div data-aos="fade-up">
             <a
               href="#"
-              class="eternitech-lp--cta-button btn"
+              class="eternitech-lp--cta-button popup-form-btn btn"
               role="button"
               data-toggle="modal"
-              data-target="#eternitech-lp--popup"
               >BOOK A MEETING <span class="fa fa-angle-right"></span
             ></a>
           </div>
@@ -862,10 +741,9 @@
               <a
                 href="#"
                 id="eternitech-lp--popup-button"
-                class="eternitech-lp--end-cta-btn btn"
+                class="eternitech-lp--end-cta-btn popup-form-btn btn"
                 role="button"
                 data-toggle="modal"
-                data-target="#eternitech-lp--popup"
                 >Schedule a call <span class="fa fa-angle-right"></span
               ></a>
             </div>
