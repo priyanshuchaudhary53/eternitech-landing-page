@@ -57,7 +57,7 @@ html {
 .eternitech-lp--section-1 .cloud-1 {
   width: 428px;
   height: 194px;
-  background-image: url('assets/img/section-1-cloud-1.png');
+  background-image: url("assets/img/section-1-cloud-1.png");
   position: absolute;
   left: 50%;
   top: 100px;
@@ -66,7 +66,7 @@ html {
 .eternitech-lp--section-1 .cloud-2 {
   width: 338px;
   height: 153px;
-  background-image: url('assets/img/section-1-cloud-2.png');
+  background-image: url("assets/img/section-1-cloud-2.png");
   position: absolute;
   left: 50%;
   top: 156px;
@@ -75,7 +75,7 @@ html {
 .eternitech-lp--section-1 .cloud-3 {
   width: 329px;
   height: 130px;
-  background-image: url('assets/img/section-1-cloud-3.png');
+  background-image: url("assets/img/section-1-cloud-3.png");
   position: absolute;
   left: 50%;
   top: 175px;
@@ -112,6 +112,7 @@ html {
   background-image: url("assets/img/eternitech-hero-bg.png");
   background-size: cover;
   background-position: center center;
+  position: relative;
 }
 
 .eternitech-lp--nav {
@@ -127,6 +128,27 @@ html {
   text-align: center;
   font-weight: 600;
   color: #ffffff;
+}
+
+.eternitech-lp--laptop-logo {
+  width: 85px;
+  height: 80px;
+  position: absolute;
+  bottom: 220px;
+  left: 50%;
+}
+
+.eternitech-lp--laptop-logo img {
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
 .eternitech-lp--hero-floating {
@@ -1144,6 +1166,20 @@ html {
     padding-top: 350px !important;
   }
 
+  .eternitech-lp--nav .eternitech-lp--container {
+    justify-content: center;
+  }
+
+  .eternitech-lp--nav .eternitech-lp--container .navbar-brand {
+    margin-right: 0;
+  }
+
+  .eternitech-lp--section-1 .cloud-1 {
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
   .eternitech-lp--hw-row1,
   .eternitech-lp--hw-row2,
   .eternitech-lp--hw-row3,
@@ -1355,6 +1391,10 @@ html {
     line-height: 68px;
   }
 
+  .eternitech-lp--laptop-logo {
+    bottom: 205px;
+  }
+
   .eternitech-lp--stats-container {
     margin-top: 50px;
   }
@@ -1481,6 +1521,11 @@ html {
 @media (min-width: 1600px) {
   .eternitech-lp--section-1 .eternitech-lp--inner-div {
     min-height: 1360px;
+  }
+
+  .eternitech-lp--laptop-logo {
+    bottom: 290px;
+    width: 110px;
   }
 
   .eternitech-lp--main-heading h2 {
