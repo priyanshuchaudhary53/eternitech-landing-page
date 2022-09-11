@@ -1175,9 +1175,27 @@ html {
   }
 
   .eternitech-lp--section-1 .cloud-1 {
-    width: 100%;
+    width: 90%;
+    height: 180px;
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .eternitech-lp--section-1 .cloud-1 h3 {
+    top: 70px;
+  }
+
+  @keyframes eternitech-hero-floating {
+    0% {
+      transform: translate(-50%, 0px);
+    }
+    50% {
+      transform: translate(-50%, 15px);
+    }
+    100% {
+      transform: translate(-50%, -0px);
+    }
   }
 
   .eternitech-lp--hw-row1,
